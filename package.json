@@ -1,0 +1,19 @@
+{
+  "name": "instanews",
+  "version": "1.0.0",
+  "description": "project-02",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericliddle/project-02.git"
+  },
+  "author": "ericliddle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericliddle/project-02/issues"
+  },
+  "homepage": "https://github.com/ericliddle/project-02#readme"
+}
