@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ericliddle/project-02/issues"
   },
-  "homepage": "https://github.com/ericliddle/project-02#readme"
+  "homepage": "https://github.com/ericliddle/project-02#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
+  }
 }
