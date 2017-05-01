@@ -1,0 +1,55 @@
+// Start of mobile view***
+
+body {
+  font-family: 'open_sans-light', sans-serif;
+  color: $default-font-color;
+  font-size: 16px;
+  background-color: blue;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+
+.content-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nyt-logo {
+  margin-bottom: 1rem;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 0.75rem;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.drop-down {
+  width: auto;
+  font-size: 1rem;
+}
+
+.copyright {
+  color: #c2c2c2;
+  text-align: center;
+
+}
+
+
+//End of mobile view***
