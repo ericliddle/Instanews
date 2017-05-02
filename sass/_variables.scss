@@ -1,12 +1,13 @@
-// Example of variable for desktop width:
+// Media Queries:
 $desktop-view: 1000px;
 $tablet-view: 600px;
 $mobile-view: 599px;
 
-// Instanews font size:
-$default-font: 16px;
-
-// Default Font Color:
+// Instanews fonts:
+$default-font-size: 16px;
+$default-font: 'open_sans-light', sans-serif;
 $default-font-color: #ffffff;
 
+// Default background color:
+$default-background: #000000;
 

@@ -1,33 +1,37 @@
 // Start of mobile view***
 
 body {
-  font-family: 'open_sans-light', sans-serif;
+  font-family: $default-font;
   color: $default-font-color;
   font-size: 16px;
-  background-color: blue;
+  background-color: $default-background;
 }
 
 .container {
   height: 100%;
-  display: flex;
+  display: inline;
   flex-direction: column;
-  margin-top: 50%;
-  margin-bottom: 50%;
 }
 
+.header-box { 
+  height: 100%;
+}
 
 .content-container {
   width: auto;
   display: flex;
   justify-content: center;
+  margin-top: 35%;
+  // margin-bottom: 35%;
 }
 
 .nyt-logo {
   margin-bottom: 1rem;
+  
 }
 
 .options {
-  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -36,7 +40,7 @@ body {
 
 .section-title {
   font-size: 0.75rem;
-  width: 80%;
+  width: 100%;
   margin-bottom: 0.5rem;
 }
 
@@ -45,11 +49,88 @@ body {
   font-size: 1rem;
 }
 
+.headlines {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    height: 300px;
+    background-size: cover;
+    text-decoration: none;
+    
+  }
+  p {
+    color: $default-font-color;
+  }
+}
+
+.copyright-footer {
+  padding-bottom: 1rem;
+}
 .copyright {
+  font-size: $default-font-size * 0.85;
   color: #c2c2c2;
   text-align: center;
 
 }
 
-
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2rem;
+}
 //End of mobile view***
+
+@media (min-width: $tablet-view) {
+
+body {
+  background-color: $default-background;
+}
+
+.options {
+  // width: 60%;
+  // margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 35%;
+}
+
+.nyt-logo {
+  width: 9rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.headlines {
+  display: flex;
+  flex-wrap: wrap;
+  a{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 33.3%;
+  }
+}
+
+}
+
+// Desktop View
+
+@media (min-width: $desktop-view) {
+.headlines {
+  display: flex;
+  flex-wrap: wrap;
+  a{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 25%;
+  }
+}
+
+}
