@@ -3,10 +3,3 @@
     @content;
   }
 }
-
-li {
-   flex: 0 1 100%;
-   @include desktop {
-      flex: 0 1 50%;
-   }
-}

@@ -49,6 +49,15 @@ body {
   font-size: 1rem;
 }
 
+.loading-gif {
+  display: flex;
+  justify-content: center;
+}
+
+.loading {
+  height: 50px;
+}
+
 .headlines {
   display: flex;
   flex-wrap: wrap;
@@ -56,10 +65,15 @@ body {
     height: 300px;
     background-size: cover;
     text-decoration: none;
-    
   }
   p {
+    font-weight: 100;
+    padding: 2%;
     color: $default-font-color;
+    background-color: rgba(0,0,0,0.5);
+  }
+  &:hover {
+    transition: all 1s ease-in-out 1.5s;;
   }
 }
 
