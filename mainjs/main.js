@@ -4,7 +4,7 @@ $(document).ready(function () {
     event.preventDefault();
     $('header').css('height, auto');
     $('.headlines').empty();
-    $('#loading-gif').show();
+    // $('#loading-gif').show();
 
     var selection = $('.drop-down option:selected').filter(':selected').val();
 
@@ -25,13 +25,10 @@ $(document).ready(function () {
           $('.headlines').append('<a href="' + value.url + '" id="' + index + '"><p>' + value.abstract + '</p></a>');
           $('#' + index).css('background-image', 'url(' + value.multimedia[4].url + ')');
         });
-
-        $('.loading-gif').hide();
+    }).fail(function() {
+      $('.headlines').append('<p"Sorry, something went wrong."</p>');
+    // }
+    //     $('.loading-gif').hide();
       });
   });
 });
-
-// write filter to grab headlines and image
-
-    // }).fail(function(err) {
-    //   throw err;
