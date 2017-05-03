@@ -2,8 +2,9 @@ $(document).ready(function () {
 
   $('select').on('change', function (event) {
     event.preventDefault();
+    $('header').css('height, auto');
     $('.headlines').empty();
-    $('#loading-gift').show();
+    $('#loading-gif').show();
 
     var selection = $('.drop-down option:selected').filter(':selected').val();
 

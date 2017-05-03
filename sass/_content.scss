@@ -8,9 +8,7 @@ body {
 }
 
 .container {
-  height: 100%;
-  display: inline;
-  // flex-direction: column;
+  width: 100%;
 }
 
 .header-box { 
@@ -76,11 +74,11 @@ body {
 .copyright-footer {
   padding-bottom: 1rem;
 }
+
 .copyright {
   font-size: $default-font-size * 0.85;
   color: #c2c2c2;
   text-align: center;
-
 }
 
 footer {
@@ -143,6 +141,7 @@ img {
 // Desktop View
 
 @media (min-width: $desktop-view) {
+
 .headlines {
   display: flex;
   flex-wrap: wrap;
@@ -152,6 +151,5 @@ img {
     background-repeat: no-repeat;
     max-width: 25%;
   }
-}
-
+  }
 }
