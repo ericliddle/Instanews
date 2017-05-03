@@ -17,18 +17,18 @@ $(document).ready(function () {
       url: url,
       method: 'GET',
     }).done(function (data) {
-        var newsImages = data.results.filter(function (value) {
-          return (value.multimedia.length);
-        }).slice(0, 12);
+      var newsImages = data.results.filter(function (value) {
+        return (value.multimedia.length);
+      }).slice(0, 12);
 
-        $.each(newsImages, function (index, value) {
-          $('.headlines').append('<a href="' + value.url + '" id="' + index + '"><p>' + value.abstract + '</p></a>');
-          $('#' + index).css('background-image', 'url(' + value.multimedia[4].url + ')');
-        });
-    }).fail(function() {
-      $('.headlines').append('<p"Sorry, something went wrong."</p>');
-    // }
-    //     $('.loading-gif').hide();
+      $.each(newsImages, function (index, value) {
+        $('.headlines').append('<a href="' + value.url + '" id="' + index + '"><p>' + value.abstract + '</p></a>');
+        $('#' + index).css('background-image', 'url(' + value.multimedia[4].url + ')');
       });
+    }).fail(function () {
+      $('.headlines').append('<p"Sorry, something went wrong."</p>');
+      // }
+      //     $('.loading-gif').hide();
+    });
   });
 });

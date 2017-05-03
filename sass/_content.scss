@@ -45,11 +45,6 @@ body {
   font-size: 1rem;
 }
 
-// .loading-gif {
-//   display: flex;
-//   justify-content: center;
-// }
-
 .loading {
   height: 50px;
   display: none;
@@ -60,6 +55,7 @@ body {
   flex-wrap: wrap;
   a {
     height: 300px;
+    width: 100%;
     background-size: cover;
     text-decoration: none;
   }
@@ -71,7 +67,13 @@ body {
   }
 }
 
+footer {
+  display: flex;
+}
+
 .copyright-footer {
+  justify-content: center;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
@@ -81,13 +83,6 @@ body {
   text-align: center;
 }
 
-footer {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 2rem;
-}
 //End of mobile view***
 
 @media (min-width: $tablet-view) {
