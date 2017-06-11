@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   $('select').on('change', function (event) {
     event.preventDefault();
-    $('header').css('height, auto');
+    $('header').addClass('activated');
     $('.headlines').empty();
     // $('#loading-gif').show();
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     $.ajax({
       url: url,
-      method: 'GET',
+      method: 'GET',  
     }).done(function (data) {
       var newsImages = data.results.filter(function (value) {
         return (value.multimedia.length);

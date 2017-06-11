@@ -7,19 +7,28 @@ body {
   background-color: $default-background;
 }
 
-// .container {
-//   width: 100%;
-// }
+header {
+  height: 30rem;
+}
 
-.header-box { 
-  height: 100%;
+header.activated {
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+  height: auto;
+  img {
+    height: 110px;
+  }
+  .options {
+    display: block;
+  }
 }
 
 .content-container {
   width: auto;
   display: flex;
   justify-content: center;
-  margin-top: 35%;
+  flex-direction: column;
 }
 
 .nyt-logo {
@@ -32,9 +41,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  p {
+    margin-bottom: 1rem;
+  }
 }
 
-.section-title {
+.instruction {
   font-size: 0.75rem;
   width: 100%;
   margin-bottom: 0.5rem;
@@ -43,6 +55,7 @@ body {
 .drop-down {
   width: auto;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .loading {
@@ -54,16 +67,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 300px;
     width: 100%;
     background-size: cover;
     text-decoration: none;
+    bottom: 0;
+    width: 100%;
+    &:hover{
+      p {
+        max-height: 300px;
+        padding: 10px;
+      }
+    }
   }
   p {
     font-weight: 100;
-    padding: 2%;
     color: $default-font-color;
     background-color: rgba(0,0,0,0.5);
+    transition: all 0.2s ease-out;
+    max-height: 0;
+    padding: 0 10px;
+    overflow: hidden;
   }
 }
 
@@ -87,53 +114,18 @@ footer {
 
 @media (min-width: $tablet-view) {
 
-body {
-  background-color: $default-background;
-}
-
-.content-container {
-  // width: auto;
-  // display: flex;
-  justify-content: right;
-  flex-wrap: wrap;
-  margin-top: 10%;
-}
-
-.header-box {
-  flex-wrap: wrap;
-}
-.options {
-  // display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 35%;
-  width: 50%;
-}
-
-.nyt-logo {
-  width: 9rem;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
 .headlines {
   display: flex;
   flex-wrap: wrap;
   a{
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 33.3%;
+    // height: 300px;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    flex-basis: 50%;
+    
   }
 }
-
 }
-
-// Desktop View
 
 @media (min-width: $desktop-view) {
 
@@ -141,10 +133,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   a{
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 25%;
+    flex-basis: 25%;
   }
   }
 }

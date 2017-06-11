@@ -9,44 +9,31 @@
 </head>
 
 <body>
-
-  <div class="container">
-
-    <header class="header-box">
-      <div class="content-container">
-        <div class="nyt-logo">
-          <img src="./assets/images/nyt-logo.svg"><img>
-        </div>
-      </div>
-    </header>
-
+  <header class="content-container">
+      <img src="./assets/images/nyt-logo.svg" class="nyt-logo">
     <div class="options">
-      <p class="section-title">Choose a section:</p>
+      <p class="instruction">Choose a section:</p>
       <select class="drop-down">
-        <option value>Sections ...</option>
-        <option value="home">Home</option>
-        <option value="arts">Arts</option>
-        <option value="business">Business</option>
-        <option value="sports">Sports</option>
-        <option value="technology">Technology</option>
-        <option value="fashion">Fashion</option>
+      <option value="">Sections ...</option>
+      <option value="home">Home</option>
+      <option value="arts">Arts</option>
+      <option value="business">Business</option>
+      <option value="sports">Sports</option>
+      <option value="technology">Technology</option>
+      <option value="fashion">Fashion</option>
       </select>
     </div>
-
-    <div class="loading-gif">
-      <img src="./assets/images/ajax-loader.gif" class="loading">
+  </header>
+    <div class="headlines">
     </div>
-
-    <div class="headlines"></div>
-
-  </div>
-
   <footer class="copyright-footer">
-      <p class="copyright">© Copyright 2016 INSTANEWS</p>
+    <p class="copyright">© Copyright 2016 INSTANEWS</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="build/js/main.min.js"></script>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="build/js/main.min.js"></script>
+  <div class="loading-gif">
+    <img src="./assets/images/ajax-loader.gif" class="loading">
+  </div>
 </body>
 
 </html>
