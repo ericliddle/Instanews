@@ -2,9 +2,20 @@ $(document).ready(function () {
 
   $('select').on('change', function (event) {
     event.preventDefault();
-    $('header').addClass('activated');
+    $('.options').css({ 'height': '4.2rem' });
+    $('.drop-down').css({ 'height': '1.5rem' });
+    $('.instructions').css({ 'height': '1.5rem' });
+    $('header').animate({
+      height: '150px',
+      margin: 'auto',
+    });
+    $('header img').animate({
+      height: '67px',
+      width: '100px',
+
+    });
+
     $('.headlines').empty();
-    // $('#loading-gif').show();
 
     var selection = $('.drop-down option:selected').filter(':selected').val();
 
@@ -15,7 +26,7 @@ $(document).ready(function () {
 
     $.ajax({
       url: url,
-      method: 'GET',  
+      method: 'GET',
     }).done(function (data) {
       var newsImages = data.results.filter(function (value) {
         return (value.multimedia.length);
@@ -32,3 +43,4 @@ $(document).ready(function () {
     });
   });
 });
+
