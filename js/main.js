@@ -28,7 +28,7 @@ $(document).ready(function () {
       url: url,
       method: 'GET',
     }).done(function (data) {
-      var newsIgitges = data.results.filter(function (value) {
+      var newsImages = data.results.filter(function (value) {
         return (value.multimedia.length);
       }).slice(0, 12);
 
@@ -44,3 +44,4 @@ $(document).ready(function () {
   });
 });
 
+// TODO: Need to rest this weekend.
