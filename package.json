@@ -1,7 +1,7 @@
 {
-  "name": "instanews",
+  "name": "Instanews",
   "version": "1.0.0",
-  "description": "project-02",
+  "description": "A NYT headlines website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ericliddle/project-02.git"
+    "url": "git+https://github.com/ericliddle/instanews.git"
   },
   "author": "ericliddle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ericliddle/project-02/issues"
+    "url": "https://github.com/ericliddle/instanews/issues"
   },
-  "homepage": "https://github.com/ericliddle/project-02#readme",
+  "homepage": "https://github.com/ericliddle/instanews/#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",

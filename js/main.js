@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     var url = 'https://api.nytimes.com/svc/topstories/v2/' + selection + '.json';
     url += '?' + $.param({
-      'api-key': "64943540dcf7458ebe1ff9f5ae1860f9"
+      'api-key': '64943540dcf7458ebe1ff9f5ae1860f9'
     });
 
     $.ajax({
